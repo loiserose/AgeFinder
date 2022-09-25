@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My test App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/main.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <header >
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./imgs/age.png" alt="age" width="30" height="24" class="d-inline-block align-text-top">
+                AgeFinder
+              </a>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+
+        <h1 class="text-muted mt-4">App To Find Your Age By Date of Birth</h1>
+        <p class="text-center">This is an app to help you calculate your age.</p>
+        <hr>
+
+        <div class="shadow p-4 mt-4">
+            <div class="mb-3">
+                <label for="dob" class="form-label">Year of Birth</label>
+                <input type="number" class="form-control" name="dob" id="dob" placeholder="Enter year you were born">
+              </div>
+    
+            <button id="calcAge" class="form-control btn btn-primary">Find My Age</button>
+            <div id="results_box" class="mt-4 alert alert-info">
+                <strong>Your years are: </strong> 
+                <span class="badge bg-info" id="resYears">0</span>
+            </div>
+
+        </div>
+    </main>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/main.js" ></script>
+</body>
+</html>
